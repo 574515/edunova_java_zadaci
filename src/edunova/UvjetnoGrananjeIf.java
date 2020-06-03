@@ -80,6 +80,19 @@ public class UvjetnoGrananjeIf {
 			}
 		}
 		
+		//inline if : korištenje ? operatora
+		/*u slučaju da if i else imaju poziv iste
+		 * metode s različitim vrijednostima*/
+		
+		if(i > 0) {
+			System.out.println("OK");
+		}
+		else {
+			System.out.println("NE");
+		}
+		
+		System.out.println(i > 0 ? "OK" : "NE");
+		
 		
 		
 	}
