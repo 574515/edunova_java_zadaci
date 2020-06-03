@@ -10,6 +10,7 @@ public class Zadatak01 {
 		int br1 = Integer.parseInt(JOptionPane.showInputDialog("Unesite prvi broj"));
 		int br2 = Integer.parseInt(JOptionPane.showInputDialog("Unesite drugi broj"));
 		int br3 = Integer.parseInt(JOptionPane.showInputDialog("Unesite treci broj"));
+		int jednak_Broj;
 		
 		if(br1 > br2 && br1 > br3) {
 			System.out.println(br1);
@@ -21,7 +22,8 @@ public class Zadatak01 {
 			System.out.println(br3);
 		}
 		else {
-			System.out.println("Sva tri broja su ista");
+			jednak_Broj = br1 & br2 & br3;
+			System.out.println(jednak_Broj);
 		}
 	}
 	
